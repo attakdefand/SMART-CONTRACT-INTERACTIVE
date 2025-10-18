@@ -32,7 +32,7 @@ I've created a complete professional website for your Smart Contract Interaction
 To make your website live, you can either:
 
 **Option 1: Use the automated setup script**
-Run `setup-github-pages.ps1` from the repository root to get step-by-step guidance.
+Run `setup-github-pages.bat` from the repository root to get step-by-step guidance. (Or use `setup-github-pages.ps1` if you prefer PowerShell)
 
 **Option 2: Manual setup**
 1. Go to your GitHub repository settings
