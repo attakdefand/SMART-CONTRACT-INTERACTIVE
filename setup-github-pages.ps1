@@ -12,34 +12,9 @@ if (-not (Test-Path "index.html")) {
 
 Write-Host "✓ Repository files verified" -ForegroundColor Green
 
-# Check if we're in a git repository
-try {
-    $gitStatus = git status
-    Write-Host "✓ Git repository detected" -ForegroundColor Green
-} catch [System.Exception] {
-    Write-Host "Error: Not a git repository or git not installed." -ForegroundColor Red
-    exit 1
-}
-
 # Check current branch
 $branch = git branch --show-current
 Write-Host "✓ Current branch: $branch" -ForegroundColor Green
-
-# Check if we're up to date with remote
-try {
-    git fetch origin
-    $localCommit = git rev-parse HEAD
-    $remoteCommit = git rev-parse origin/$branch
-    
-    if ($localCommit -ne $remoteCommit) {
-        Write-Host "Warning: Local repository is not up to date with remote." -ForegroundColor Yellow
-        Write-Host "Consider running 'git push origin $branch' before setting up GitHub Pages." -ForegroundColor Yellow
-    } else {
-        Write-Host "✓ Repository is up to date with remote" -ForegroundColor Green
-    }
-} catch [System.Exception] {
-    Write-Host "Warning: Could not verify remote repository status." -ForegroundColor Yellow
-}
 
 Write-Host ""
 Write-Host "To enable GitHub Pages, follow these steps:" -ForegroundColor Cyan
