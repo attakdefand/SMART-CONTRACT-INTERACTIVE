@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Smart Contract Interaction Tests Catalog</title>
+    <meta name="description" content="Documentation for the Smart Contract Interaction Tests Catalog - comprehensive guide to using the 146 tests">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Smart Contract Interaction Tests Catalog</h1>
+            <p class="subtitle">Documentation & Usage Guide</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Project Overview</h2>
+            <p>This project contains 146 comprehensive tests for interacting with smart contracts, organized by category and sub-type. The tests cover various aspects of smart contract security, functionality, and best practices.</p>
+            
+            <h3>Repository Structure</h3>
+            <pre><code>smart-contract-interaction-tests/
+├── README.md
+├── docs/
+│   ├── categories.md
+│   └── test-template.md
+├── src/
+│   ├── [category]/
+│   │   ├── [sub-type]/
+│   │   │   ├── [test-name].md
+│   │   │   └── ...
+│   │   └── ...
+│   └── ...
+└── Smart-Contract_Interaction__146_Tests_Catalog.csv
+</code></pre>
+        </section>
+
+        <section class="usage">
+            <h2>Usage Guide</h2>
+            <p>Each test file contains:</p>
+            <ul>
+                <li><strong>Test name</strong> - Descriptive title of the test</li>
+                <li><strong>Interaction type</strong> - Type of interaction (read, write, event, etc.)</li>
+                <li><strong>Detailed steps</strong> - Step-by-step procedure to perform the test</li>
+                <li><strong>Key assertions</strong> - Expected outcomes to verify</li>
+                <li><strong>Suggested tools</strong> - Recommended tools for executing the test</li>
+                <li><strong>Additional notes</strong> - Any additional information or considerations</li>
+            </ul>
+
+            <h3>How to Use the Tests</h3>
+            <ol>
+                <li>Browse the <code>src/</code> directory to find tests relevant to your smart contract</li>
+                <li>Open a test file to view the detailed steps and assertions</li>
+                <li>Follow the procedure to execute the test on your smart contract</li>
+                <li>Verify that the key assertions are met</li>
+                <li>Document any issues or deviations from expected behavior</li>
+            </ol>
+        </section>
+
+        <section class="categories">
+            <h2>Test Categories</h2>
+            <p>The tests are organized into the following 21 categories:</p>
+            
+            <div class="category-grid">
+                <div class="category-item">
+                    <h3>Access Control</h3>
+                    <p>Tests related to ownership, roles, and permission management</p>
+                </div>
+                <div class="category-item">
+                    <h3>Compliance Controls</h3>
+                    <p>Tests for regulatory and compliance requirements</p>
+                </div>
+                <div class="category-item">
+                    <h3>Cross-Chain & Bridging</h3>
+                    <p>Tests for cross-chain functionality and bridge operations</p>
+                </div>
+                <div class="category-item">
+                    <h3>DoS & Gas</h3>
+                    <p>Tests for gas optimization and denial-of-service prevention</p>
+                </div>
+                <div class="category-item">
+                    <h3>ERC-20 Conformance</h3>
+                    <p>Tests for ERC-20 token standard compliance</p>
+                </div>
+                <div class="category-item">
+                    <h3>Economic & MEV Safety</h3>
+                    <p>Tests for economic security and MEV protection</p>
+                </div>
+                <div class="category-item">
+                    <h3>Events & Logs</h3>
+                    <p>Tests for event emission and log handling</p>
+                </div>
+                <div class="category-item">
+                    <h3>Governance</h3>
+                    <p>Tests for governance mechanisms and voting systems</p>
+                </div>
+                <div class="category-item">
+                    <h3>Interface & ABI</h3>
+                    <p>Tests for contract interfaces and ABI compatibility</p>
+                </div>
+                <div class="category-item">
+                    <h3>Math & Accounting</h3>
+                    <p>Tests for mathematical operations and accounting accuracy</p>
+                </div>
+                <div class="category-item">
+                    <h3>Meta-Transactions & Account Abstraction</h3>
+                    <p>Tests for meta-transactions and account abstraction features</p>
+                </div>
+                <div class="category-item">
+                    <h3>NFT Standards</h3>
+                    <p>Tests for NFT standards (ERC-721, ERC-1155) compliance</p>
+                </div>
+                <div class="category-item">
+                    <h3>Observability & DevEx</h3>
+                    <p>Tests for debugging, monitoring, and developer experience</p>
+                </div>
+                <div class="category-item">
+                    <h3>Oracle & Market Data</h3>
+                    <p>Tests for oracle integration and market data handling</p>
+                </div>
+                <div class="category-item">
+                    <h3>Pausability & Circuit Breakers</h3>
+                    <p>Tests for pause mechanisms and emergency controls</p>
+                </div>
+                <div class="category-item">
+                    <h3>Read-Only Views</h3>
+                    <p>Tests for view functions and read operations</p>
+                </div>
+                <div class="category-item">
+                    <h3>Reentrancy & Atomicity</h3>
+                    <p>Tests for reentrancy protection and atomic operations</p>
+                </div>
+                <div class="category-item">
+                    <h3>Signatures & Permit</h3>
+                    <p>Tests for signature validation and permit functionality</p>
+                </div>
+                <div class="category-item">
+                    <h3>State-Changing Writes</h3>
+                    <p>Tests for state-modifying operations</p>
+                </div>
+                <div class="category-item">
+                    <h3>Time & Scheduling</h3>
+                    <p>Tests for time-based functionality and scheduling</p>
+                </div>
+                <div class="category-item">
+                    <h3>Upgradeability / Proxy</h3>
+                    <p>Tests for upgradeable contracts and proxy patterns</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contribute">
+            <h2>Contributing</h2>
+            <p>Contributions are welcome! If you'd like to add new tests, improve existing ones, or suggest enhancements:</p>
+            <ol>
+                <li>Fork the repository</li>
+                <li>Create a new branch for your changes</li>
+                <li>Make your improvements</li>
+                <li>Submit a pull request with a clear description of your changes</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Smart Contract Interaction Tests Catalog. Open Source Project.</p>
+            <p><a href="https://github.com/attakdefand/SMART-CONTRACT-INTERACTIVE">GitHub Repository</a> | 
+            <a href="index.html">Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
