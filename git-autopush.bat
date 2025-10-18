@@ -7,4 +7,3 @@ git commit -m "Auto commit - %date% %time%"
 echo [Git AutoPush] Pushing to GitHub...
 git push origin main
 echo [Git AutoPush] Push completed successfully!
-pause
