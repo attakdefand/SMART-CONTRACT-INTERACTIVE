@@ -13,6 +13,7 @@ I've created a complete professional website for your Smart Contract Interaction
 4. **[404.html](file:///d:/INTERACTIVE-SMART-CONTRACT/404.html)** - Custom error page for better user experience
 5. **CNAME** - Configuration file for GitHub Pages deployment
 6. **[GITHUB-PAGES-SETUP.md](file:///d:/INTERACTIVE-SMART-CONTRACT/GITHUB-PAGES-SETUP.md)** - Step-by-step guide to enable GitHub Pages
+7. **[setup-github-pages.ps1](file:///d:/INTERACTIVE-SMART-CONTRACT/setup-github-pages.ps1)** - PowerShell script to guide you through the setup process
 
 ## Website Features
 
@@ -27,8 +28,12 @@ I've created a complete professional website for your Smart Contract Interaction
 
 ## Next Steps
 
-To make your website live, you need to:
+To make your website live, you can either:
 
+**Option 1: Use the automated setup script**
+Run `setup-github-pages.ps1` from the repository root to get step-by-step guidance.
+
+**Option 2: Manual setup**
 1. Go to your GitHub repository settings
 2. Navigate to the "Pages" section
 3. Select "main" branch as the source
