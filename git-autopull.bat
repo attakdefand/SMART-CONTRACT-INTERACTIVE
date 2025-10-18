@@ -1,0 +1,9 @@
+@echo off
+cd /d d:\INTERACTIVE-SMART-CONTRACT
+echo [Auto Pull] Starting automatic pull service...
+:loop
+echo [Auto Pull] Checking for updates at %date% %time%...
+git pull origin main
+echo [Auto Pull] Pull completed. Waiting 20 minutes for next check...
+timeout /t 1200 /nobreak >nul
+goto loop
