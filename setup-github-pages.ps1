@@ -16,7 +16,7 @@ Write-Host "✓ Repository files verified" -ForegroundColor Green
 try {
     $gitStatus = git status
     Write-Host "✓ Git repository detected" -ForegroundColor Green
-} catch [Exception] {
+} catch {
     Write-Host "Error: Not a git repository or git not installed." -ForegroundColor Red
     exit 1
 }
@@ -37,7 +37,7 @@ try {
     } else {
         Write-Host "✓ Repository is up to date with remote" -ForegroundColor Green
     }
-} catch [Exception] {
+} catch {
     Write-Host "Warning: Could not verify remote repository status." -ForegroundColor Yellow
 }
 
@@ -63,4 +63,4 @@ Write-Host "Your site will be available at:" -ForegroundColor Green
 Write-Host "https://attakdefand.github.io/SMART-CONTRACT-INTERACTIVE/" -ForegroundColor Blue
 Write-Host ""
 Write-Host "Press any key to continue..." -ForegroundColor Gray
-$host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
