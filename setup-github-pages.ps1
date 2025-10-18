@@ -16,7 +16,7 @@ Write-Host "✓ Repository files verified" -ForegroundColor Green
 try {
     $gitStatus = git status
     Write-Host "✓ Git repository detected" -ForegroundColor Green
-} catch {
+} catch [Exception] {
     Write-Host "Error: Not a git repository or git not installed." -ForegroundColor Red
     exit 1
 }
@@ -37,7 +37,7 @@ try {
     } else {
         Write-Host "✓ Repository is up to date with remote" -ForegroundColor Green
     }
-} catch {
+} catch [Exception] {
     Write-Host "Warning: Could not verify remote repository status." -ForegroundColor Yellow
 }
 
