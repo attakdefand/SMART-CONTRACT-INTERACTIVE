@@ -14,6 +14,7 @@ I've created a complete professional website for your Smart Contract Interaction
 5. **CNAME** - Configuration file for GitHub Pages deployment
 6. **[GITHUB-PAGES-SETUP.md](file:///d:/INTERACTIVE-SMART-CONTRACT/GITHUB-PAGES-SETUP.md)** - Step-by-step guide to enable GitHub Pages
 7. **[setup-github-pages.ps1](file:///d:/INTERACTIVE-SMART-CONTRACT/setup-github-pages.ps1)** - PowerShell script to guide you through the setup process
+8. **[setup-github-pages.bat](file:///d:/INTERACTIVE-SMART-CONTRACT/setup-github-pages.bat)** - Batch file alternative for Windows command prompt
 
 ## Website Features
 
